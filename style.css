@@ -1,0 +1,162 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+  padding: 0;
+  font-family: 'Karla', sans-serif;;
+}
+
+body{
+	background: #E6EFF6;
+}
+
+#container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#flashcard{
+  height: 450px;
+  width: 640px;
+  border-radius: 20px;
+}
+
+.header{
+	height: 40%;
+	width: 100%;
+	padding: 40px;
+	background: #fff;
+	border-top-right-radius: 7px;
+	border-top-left-radius: 7px;
+}
+.header h1{
+	font-weight: 700;
+	color: hsl(179, 62%, 43%);
+	margin-bottom: 15px;
+}
+.header h3{
+	font-weight: 700;
+	color: hsl(71, 73%, 54%);
+	margin-bottom: 10px;
+}
+.header p{
+	line-height: 1.6em;
+	font-size: 16px;
+	font-weight: 400;
+	color: #C3C6D1;
+}
+
+.price{
+	height: 60%;
+	width: 50%;
+	padding: 15px;
+	float: left;
+	background: #2BB3B1;
+	border-bottom-left-radius: 7px;
+}
+.price h3{
+	margin-top: 38px;
+	color: #F4FFFF;
+	font-weight: 700;
+	margin-left: 18px;
+	margin-bottom: 18px;
+}
+.price h2{
+	margin-top: 28px;
+	color: #F4FFFF;
+	font-weight: 700;
+	margin-left: 18px;
+	margin-bottom: 18px;
+}
+span{
+	font-size: 16px;
+	font-weight: 400;
+	color: #7DE0E3;
+}
+.price a{
+	text-decoration: none;
+	color: #FAFDBD;
+}
+.price p{
+	color: #B6F4F5;
+	margin-left: 18px;
+	margin-bottom: 25px;
+}
+
+.about{
+	background: #4ABEBD;
+	height: 60%;
+	width: 50%;
+	padding: 20px;
+	float: right;
+	border-bottom-right-radius: 7px;
+}
+.about h2{
+	margin-top: 35px;
+	margin-left: 20px;
+	color: #fff;
+	margin-bottom: 25px;
+}
+.about li{
+	margin-left: 20px;
+	list-style: none;
+	color: #95E3E4;
+}
+
+button{
+	background-color: hsl(71, 73%, 54%);
+	width: 90%;
+	height: 40px;
+	outline: none;
+	border-radius: 5px;
+	border: none;
+	margin-left: 18px;
+}
+button a{
+	color: #fff;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+
+
+@media only screen and (min-width : 280px) and (max-width : 568px){
+	#container{
+		height: 100%;
+	}
+	#flashcard{
+		width: 90%;
+		height: 90%;
+	}
+	.header{
+		margin-top: 20%;
+		padding: 15px;
+		height: 30%;
+	}
+	.price{
+		width: 100%;
+		height: 30%;
+		transition: width 3s;
+		border-bottom-left-radius: 0px;
+	}
+	.about{
+		border-bottom-left-radius: 7px;
+		height: 30%;
+		width: 100%;
+		transition: width 3s;
+		margin-bottom: 20%;
+	}
+	.price-wrapper{
+		margin-left: -12px;
+		margin-top: -25px;
+		margin-bottom: 10px;
+	}
+	.about-wrapper{
+		margin-left: -12px;
+		margin-top: -25px;
+		margin-bottom: 10px;
+	}
+	
+}
